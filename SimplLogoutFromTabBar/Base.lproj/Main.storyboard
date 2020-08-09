@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="r9P-AL-pNm">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="SimplLogoutFromTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G4g-D8-M0J">
+                                <rect key="frame" x="57" y="338" width="300" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="e4N-qq-HWK"/>
+                                    <constraint firstAttribute="height" constant="60" id="fRc-aJ-hyw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="myQ-ks-vFL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="G4g-D8-M0J" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RYd-Qu-Nvy"/>
+                            <constraint firstItem="G4g-D8-M0J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="acE-ug-KK8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cPk-3d-pCw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526.08695652173913" y="54.619565217391312"/>
+        </scene>
+        <!--SecondVC-->
+        <scene sceneID="P0g-Vu-1Bt">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="QQl-60-bhG" customClass="SecondVC" customModule="SimplLogoutFromTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="slQ-jN-SaL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Fm-5P-isZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8u8-HZ-fWR">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="v8I-XO-0Qw">
+                            <connections>
+                                <action selector="logoutSecondVC:" destination="QQl-60-bhG" id="Rra-Rn-QRg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vap-QL-vHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3536.2318840579715" y="438.58695652173918"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Io1-pf-Ccx">
+            <objects>
+                <viewController id="FXy-Ec-vcb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Df3-Sc-YC7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="aQs-8b-NtD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ahq-c6-WdB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uZm-UP-H2k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5414.4927536231889" y="150"/>
+        </scene>
+        <!--LogoutVC-->
+        <scene sceneID="gBI-zY-08B">
+            <objects>
+                <viewController storyboardIdentifier="LogoutVC" id="Oao-9m-fb7" customClass="LogoutVC" customModule="SimplLogoutFromTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fhh-L6-dAc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmo-e4-R6e">
+                                <rect key="frame" x="57" y="338" width="300" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="E10-X8-Z8O"/>
+                                    <constraint firstAttribute="height" constant="60" id="rxP-lx-Hre"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="Logout:" destination="Oao-9m-fb7" eventType="touchUpInside" id="UIV-lk-MH0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXU-5i-Kpq">
+                                <rect key="frame" x="184" y="527" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="FXy-Ec-vcb" kind="show" id="Ne7-wN-F0D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Wmo-e4-R6e" firstAttribute="centerY" secondItem="fhh-L6-dAc" secondAttribute="centerY" id="A7I-yW-Q0X"/>
+                            <constraint firstItem="Wmo-e4-R6e" firstAttribute="centerX" secondItem="fhh-L6-dAc" secondAttribute="centerX" id="TzP-Ks-Ws9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0G2-k8-0hL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kq5-2L-mCF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hDc-sH-yy1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3652.1739130434785" y="-318.75"/>
+        </scene>
+        <!--Main TabbarC-->
+        <scene sceneID="TCo-5O-jBq">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabbarC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Dy-wq-g7o" customClass="MainTabbarC" customModule="SimplLogoutFromTabBar" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m4N-Wm-7Nb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kwc-qS-Y3X" kind="relationship" relationship="viewControllers" id="k9V-2B-r3g"/>
+                        <segue destination="QyR-UT-cUs" kind="relationship" relationship="viewControllers" id="oYu-GG-fgS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdP-cp-Mga" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708.6956521739132" y="108.42391304347827"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="klK-SL-Tk5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r9P-AL-pNm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Os4-Nv-LWB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="X0q-qd-i0J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fp1-Gg-DC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-381.15942028985512" y="54.619565217391312"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="snJ-DB-yEU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QyR-UT-cUs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="wyQ-La-Vgn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EBd-QC-yt1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Oao-9m-fb7" kind="relationship" relationship="rootViewController" id="Qdo-pJ-dTa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYn-is-gmw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.9275362318845" y="-318.75"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="7Db-Cb-fdY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kwc-qS-Y3X" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="gxF-8k-Jvr"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MeY-gD-GuO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QQl-60-bhG" kind="relationship" relationship="rootViewController" id="HH2-a7-9TL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hni-30-wz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2628.985507246377" y="438.58695652173918"/>
+        </scene>
+    </scenes>
+</document>
